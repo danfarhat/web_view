@@ -6,8 +6,8 @@ workflows:
         name: iOS App
         environment:
             vars:
-                XCODE_WORKSPACE: "{{choufouna}}"
-                XCODE_SCHEME: "{{choufouna}}"
+                XCODE_WORKSPACE: "{{group:Runner.xcodeproj}}"
+                XCODE_SCHEME: "{{Runner.app}}"
             xcode: latest
             cocoapods: default
         scripts:
